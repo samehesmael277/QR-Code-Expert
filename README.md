@@ -7,7 +7,7 @@
 
 QR-Code-Expert is a versatile Android application that provides users with advanced QR code functionality. Users can open their device's camera to scan QR codes, view the scanned results in a dialog, and copy the information. Additionally, the app allows users to choose an image from their device to scan QR codes, and it offers the ability to generate QR codes. Users can save the generated QR codes on their devices for easy sharing and storage.
 
-This app was created during my internship at CodSoft Company.
+This app was created during my internship at CodeClause Company.
 
 ## Features
 
