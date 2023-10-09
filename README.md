@@ -32,7 +32,7 @@ This app was created during my internship at CodSoft Company.
 
 To use the QR-Code-Expert app, follow these steps:
 
-1. Clone this repository to your local machine using `git clone [https://github.com/samehesmael277/QR-Code-Expert]`.
+1. Clone this repository to your local machine using `git clone https://github.com/samehesmael277/QR-Code-Expert`.
 2. Open the project in Android Studio.
 3. Build and run the app on an Android emulator or physical device.
 
