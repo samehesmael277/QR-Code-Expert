@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.sameh.qrbarcodescanner.ui.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_generateQRBarcodeFragment"
+            app:destination="@id/generateQRBarcodeFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/generateQRBarcodeFragment"
+        android:name="com.sameh.qrbarcodescanner.ui.fragments.GenerateQRBarcodeFragment"
+        android:label="fragment_generate_q_r_barcode"
+        tools:layout="@layout/fragment_generate_q_r_barcode" />
+
+</navigation>

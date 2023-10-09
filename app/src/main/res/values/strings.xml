@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">QR Code Expert</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="scan_qr_code">Scan QR Code</string>
+    <string name="generate_qr_code">Generate QR Code</string>
+    <string name="scan_or_generate_qr_barcode">Scan Or Generate QR Code</string>
+    <string name="enter_qr_value_or_link">Enter QR value or link</string>
+    <string name="copy">Copy</string>
+    <string name="choose_image">Choose Image To Scan</string>
+    <string name="scan_result">Scan Result</string>
+</resources>

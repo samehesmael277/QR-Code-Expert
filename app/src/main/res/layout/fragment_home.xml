@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.HomeFragment">
+
+    <TextView
+        android:id="@+id/tv_scan_or_generate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/scan_or_generate_qr_barcode"
+        android:fontFamily="@font/cheese_burger"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="@dimen/_20ssp"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toTopOf="@id/guidelineTop" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_animation"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/tv_scan_or_generate"
+        app:layout_constraintBottom_toTopOf="@id/btn_scan"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/animation_qr"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_scan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:backgroundTint="@color/red"
+        android:fontFamily="@font/cheese_burger"
+        android:letterSpacing="0.1"
+        android:paddingVertical="@dimen/_8sdp"
+        android:text="@string/scan_qr_code"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp"
+        app:cornerRadius="@dimen/_10sdp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_choose_local_image"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_choose_local_image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/cheese_burger"
+        android:letterSpacing="0.1"
+        android:text="@string/choose_image"
+        android:textColor="@color/white"
+        android:paddingVertical="@dimen/_8sdp"
+        android:textSize="@dimen/_12ssp"
+        app:cornerRadius="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_generate"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_generate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:backgroundTint="@color/purple"
+        android:fontFamily="@font/cheese_burger"
+        android:letterSpacing="0.1"
+        android:text="@string/generate_qr_code"
+        android:textColor="@color/white"
+        android:paddingVertical="@dimen/_8sdp"
+        android:textSize="@dimen/_12ssp"
+        app:cornerRadius="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineBottom"
+        app:layout_constraintVertical_bias="0.9"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/lottie_animation" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
