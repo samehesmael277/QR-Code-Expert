@@ -3,6 +3,11 @@
 ![GitHub stars](https://img.shields.io/github/stars/samehesmael277/QR-Code-Expert?style=flat-square)
 ![GitHub forks](https://img.shields.io/github/forks/samehesmael277/QR-Code-Expert?style=flat-square)
 
+![QR Code Expert](https://github.com/samehesmael277/QR-Code-Expert/assets/91541580/59ac25c6-8486-4db2-a470-7aa48f432d88)
+
+## Download App From Google Play
+[Download](https://play.google.com/store/apps/details?id=com.sameh.qrbarcodescanner)
+
 ## Overview
 
 QR-Code-Expert is a versatile Android application that provides users with advanced QR code functionality. Users can open their device's camera to scan QR codes, view the scanned results in a dialog, and copy the information. Additionally, the app allows users to choose an image from their device to scan QR codes, and it offers the ability to generate QR codes. Users can save the generated QR codes on their devices for easy sharing and storage.
